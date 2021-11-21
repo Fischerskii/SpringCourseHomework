@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Flow {
 
-    ExternalInfoProcess externalInfoProcess;
+    Process process;
     ExternalService externalService;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Flow.class);
 
-    public Flow(@Lazy ExternalInfoProcess externalInfoProcess, ExternalService externalService) {
-        this.externalInfoProcess = externalInfoProcess;
+    public Flow(@Lazy Process process, ExternalService externalService) {
+        this.process = process;
         this.externalService = externalService;
     }
 
@@ -22,9 +22,9 @@ public class Flow {
         ExternalInfo externalInfo = externalService.getExternalInfo(id);
 
         if (externalInfo != null) {
-            externalInfoProcess.run(externalInfo);
+            process.run(externalInfo);
         } else {
-            LOGGER.info(String.valueOf(externalInfoProcess.getClass()));
+            LOGGER.info(String.valueOf(process.getClass()));
         }
     }
 }
