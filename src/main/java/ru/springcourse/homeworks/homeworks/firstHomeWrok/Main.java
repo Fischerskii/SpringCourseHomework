@@ -3,7 +3,6 @@ package ru.springcourse.homeworks.homeworks.firstHomeWrok;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
-import ru.springcourse.homeworks.homeworks.firstHomeWrok.impl.ExternalServiceImpl;
 
 @ComponentScan
 @PropertySource("classpath:application.properties")
