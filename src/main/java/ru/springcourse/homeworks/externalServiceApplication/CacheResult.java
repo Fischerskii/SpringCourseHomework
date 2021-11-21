@@ -1,4 +1,4 @@
-package ru.springcourse.homeworks.firstHomeWrok;
+package ru.springcourse.homeworks.externalServiceApplication;
 
 import org.springframework.cache.annotation.Cacheable;
 

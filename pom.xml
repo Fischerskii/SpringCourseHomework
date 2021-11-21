@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ru.springCourse.homeworks</groupId>
-    <artifactId>homeworks</artifactId>
+    <artifactId>homework1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>homeworks</name>
-    <description>homeworks</description>
+    <name>homework1</name>
+    <description>homework1</description>
     <properties>
         <java.version>11</java.version>
     </properties>
