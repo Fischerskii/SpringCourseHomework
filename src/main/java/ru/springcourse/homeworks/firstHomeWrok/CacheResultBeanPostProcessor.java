@@ -1,4 +1,4 @@
-package ru.springcourse.homeworks.homeworks.firstHomeWrok;
+package ru.springcourse.homeworks.firstHomeWrok;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
@@ -9,7 +9,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 import org.springframework.util.SerializationUtils;
-import ru.springcourse.homeworks.homeworks.firstHomeWrok.impl.ExternalServiceImpl;
+import ru.springcourse.homeworks.firstHomeWrok.impl.ExternalServiceImpl;
 
 import javax.crypto.*;
 import java.security.InvalidKeyException;

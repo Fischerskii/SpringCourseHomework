@@ -1,11 +1,11 @@
-package ru.springcourse.homeworks.homeworks.firstHomeWrok.impl;
+package ru.springcourse.homeworks.firstHomeWrok.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import ru.springcourse.homeworks.homeworks.firstHomeWrok.CacheResult;
-import ru.springcourse.homeworks.homeworks.firstHomeWrok.ExternalInfo;
-import ru.springcourse.homeworks.homeworks.firstHomeWrok.ExternalService;
+import ru.springcourse.homeworks.firstHomeWrok.CacheResult;
+import ru.springcourse.homeworks.firstHomeWrok.ExternalInfo;
+import ru.springcourse.homeworks.firstHomeWrok.ExternalService;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

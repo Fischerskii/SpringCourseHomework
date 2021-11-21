@@ -1,4 +1,4 @@
-package ru.springcourse.homeworks.homeworks.firstHomeWrok;
+package ru.springcourse.homeworks.firstHomeWrok;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

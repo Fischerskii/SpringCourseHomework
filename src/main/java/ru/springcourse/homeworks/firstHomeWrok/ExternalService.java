@@ -1,4 +1,4 @@
-package ru.springcourse.homeworks.homeworks.firstHomeWrok;
+package ru.springcourse.homeworks.firstHomeWrok;
 
 public interface ExternalService {
     ExternalInfo getExternalInfo(Integer id);

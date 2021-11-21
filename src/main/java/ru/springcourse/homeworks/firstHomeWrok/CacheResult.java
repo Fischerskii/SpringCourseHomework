@@ -1,4 +1,4 @@
-package ru.springcourse.homeworks.homeworks.firstHomeWrok;
+package ru.springcourse.homeworks.firstHomeWrok;
 
 import org.springframework.cache.annotation.Cacheable;
 
