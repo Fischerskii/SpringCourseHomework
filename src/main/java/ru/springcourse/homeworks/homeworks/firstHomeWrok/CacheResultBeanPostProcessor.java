@@ -12,7 +12,6 @@ import org.springframework.util.SerializationUtils;
 import ru.springcourse.homeworks.homeworks.firstHomeWrok.impl.ExternalServiceImpl;
 
 import javax.crypto.*;
-import java.lang.annotation.RetentionPolicy;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
