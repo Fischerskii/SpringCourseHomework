@@ -10,7 +10,6 @@ import ru.springcourse.homeworks.homeworks.firstHomeWrok.impl.ExternalServiceImp
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Main.class);
-        ExternalServiceImpl externalService = applicationContext.getBean(ExternalServiceImpl.class);
 
         Flow flow = applicationContext.getBean(Flow.class);
         flow.run(1);
@@ -18,7 +17,6 @@ public class Main {
         flow.run(3);
         flow.run(4);
 
-        externalService.cleaner();
         applicationContext.close();
     }
 }

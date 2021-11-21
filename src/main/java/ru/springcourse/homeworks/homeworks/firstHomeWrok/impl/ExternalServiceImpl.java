@@ -10,7 +10,7 @@ import ru.springcourse.homeworks.homeworks.firstHomeWrok.ExternalService;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component("externalServiceImpl")
+@Component
 public class ExternalServiceImpl implements ExternalService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ExternalServiceImpl.class);
 
