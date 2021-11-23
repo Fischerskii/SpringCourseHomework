@@ -10,6 +10,9 @@ public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Main.class);
 
+        ExternalService externalService = applicationContext.getBean(ExternalService.class);
+        externalService.getExternalInfo(1);
+
         Flow flow = applicationContext.getBean(Flow.class);
         flow.run(1);
         flow.run(2);

@@ -2,6 +2,7 @@ package ru.springcourse.homeworks.externalServiceApplication.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import ru.springcourse.homeworks.externalServiceApplication.CacheResult;
 import ru.springcourse.homeworks.externalServiceApplication.ExternalInfo;
@@ -12,11 +13,18 @@ import javax.annotation.PreDestroy;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component("externalServiceImpl")
+@Component
 public class ExternalServiceImpl implements ExternalService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ExternalServiceImpl.class);
 
-    Map<Integer, ExternalInfo> externalInfoMap = new HashMap<>();
+    private final Map<Integer, ExternalInfo> externalInfoMap = new HashMap<>();
+
+    @Value("${id-not-process}")
+    private Integer id;
+
+    public ExternalServiceImpl() {
+        externalInfoMap.put(id, new ExternalInfo(id, "from properties"));
+    }
 
     @CacheResult
     @Override
@@ -35,8 +43,8 @@ public class ExternalServiceImpl implements ExternalService {
 
     @PreDestroy
     public void destroy() {
+        LOGGER.info("Map before: {}", externalInfoMap);
         this.externalInfoMap.clear();
-
-        LOGGER.info("HashMap cleared");
+        LOGGER.info("Map after: {}", externalInfoMap);
     }
 }

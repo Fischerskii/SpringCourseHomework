@@ -10,6 +10,14 @@ public class ExternalInfo {
         this.info = info;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
     @Override
     public String toString() {
         return "ExternalInfo{" +

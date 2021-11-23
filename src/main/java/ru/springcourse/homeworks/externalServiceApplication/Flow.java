@@ -24,7 +24,7 @@ public class Flow {
         if (externalInfo != null) {
             process.run(externalInfo);
         } else {
-            LOGGER.info(String.valueOf(process.getClass()));
+            LOGGER.info("Not run process: {}", externalInfo);
         }
     }
 }

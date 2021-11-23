@@ -3,11 +3,7 @@ package ru.springcourse.homeworks.externalServiceApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Component;
 
-@Component
-@Lazy
 public class ExternalInfoProcess implements Process {
     @Value("${id-not-process}")
     private Integer idNotProcess;
@@ -17,7 +13,7 @@ public class ExternalInfoProcess implements Process {
     @Override
     public boolean run(ExternalInfo externalInfo) {
 
-        if (externalInfo.id.equals(idNotProcess)) {
+        if (idNotProcess.equals(externalInfo.getId())) {
             LOGGER.info("ExternalInfoProcess equals idNotProcess");
             return false;
         } else {
